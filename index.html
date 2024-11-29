@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Paper Recycling Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Paper Recycling Platform</h1>
+        <p>Donate Paper, Exchange Books, Donate Newspapers</p>
+    </header>
+
+    <main>
+        <section class="donation-options">
+            <div class="option">
+                <h2>Donate Paper</h2>
+                <button id="donate-paper">Donate Paper</button>
+            </div>
+            <div class="option">
+                <h2>Exchange Books</h2>
+                <button id="exchange-books">Exchange Books</button>
+            </div>
+            <div class="option">
+                <h2>Donate Newspapers</h2>
+                <button id="donate-newspapers">Donate Newspapers</button>
+            </div>
+        </section>
+
+        <div id="donation-form" class="hidden">
+            <h2>Donation Form</h2>
+            <form id="donationForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" required>
+
+                <label for="donation-type">Donation Type:</label>
+                <select id="donation-type" name="donation-type" required>
+                    <option value="donate-paper">Donate Paper</option>
+                    <option value="exchange-books">Exchange Books</option>
+                    <option value="donate-newspapers">Donate Newspapers</option>
+                </select>
+
+                <button type="submit">Submit Donation</button>
+            </form>
+            <div id="confirmation-message" class="hidden">
+                <p>Thank you for your donation! We appreciate your contribution.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Digital Paper Recycling Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
